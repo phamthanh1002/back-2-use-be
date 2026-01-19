@@ -562,7 +562,13 @@ export class BusinessesService {
           HttpStatus.BAD_REQUEST,
         );
 
+      if (subscription.limits.rewardPointsLimit) {
+        business.maxRewardPoints += subscription.limits.rewardPointsLimit;
+        business.rewardPoints += subscription.limits.rewardPointsLimit;
+      }
+
       await wallet.save({ session });
+      await business.save({ session });
       await businessSub.save({ session });
 
       const transaction = new this.walletTransactionsModel({
