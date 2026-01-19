@@ -417,6 +417,13 @@ export class BusinessesService {
       status: startDate <= now ? 'active' : 'pending',
       isTrialUsed: true,
     });
+
+    if (trialSub.limits?.rewardPointsLimit) {
+      business.maxRewardPoints += trialSub.limits.rewardPointsLimit;
+      business.rewardPoints += trialSub.limits.rewardPointsLimit;
+      await business.save();
+    }
+
     await businessTrial.save();
 
     await this.notificationsService.create({
