@@ -20,9 +20,8 @@ A comprehensive backend API for F&B businesses to manage sustainable reusable co
 
 ## 🔗 Live Demo
 
-Backend API: [Back2Use API](https://back-2-use.up.railway.app)  
-Frontend: [Back2Use Frontend](https://back-2-use-fe.vercel.app)  
-API Documentation: [Swagger UI](https://back-2-use.up.railway.app/api)  
+Backend API: [Back2Use API](https://back-2-use-be-production.up.railway.app)  
+Frontend: [Back2Use Frontend](https://back-2-use-fe-eight.vercel.app)  
 
 ## 🛠️ Technology Stack
 
@@ -261,13 +260,14 @@ After seeding the database, you can login with:
 | Role     | Username               | Password    |
 | -------- | -----------------------| ----------- |
 | Admin    | admin1                 | 123456      |
-| Customer | congduy1               | 123456      |
-| Business | duong2306              | 123456      |
+| Customer | duong2306              | 123456      |
+| Business | congduy2               | 123456      |
+| Staff    | duyhcse171326          | 123456      |
 
 ## 🏗️ Architecture Overview
 
 ### Authentication Flow
-- Users authenticate via JWT, Google OAuth, or Facebook OAuth
+- Users authenticate via JWT, Google OAuth
 - Role-based access control (RBAC) with User, Staff, Admin, and Business roles
 - Protected routes use JWT authentication guards
 
