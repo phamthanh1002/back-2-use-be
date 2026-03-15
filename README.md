@@ -20,7 +20,7 @@ A comprehensive backend API for F&B businesses to manage sustainable reusable co
 
 ## 🔗 Live Demo
 
-Backend API: [Back2Use API](https://back-2-use-be-production.up.railway.app)  
+Backend API: [Back2Use API](https://back-2-use-be-production-dc85.up.railway.app)  
 Frontend: [Back2Use Frontend](https://back-2-use-fe-eight.vercel.app)  
 
 ## 🛠️ Technology Stack
